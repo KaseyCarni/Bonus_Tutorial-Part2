@@ -33,4 +33,9 @@ public class NPCMove : MonoBehaviour {
             _navMeshAgent.SetDestination(targetVector);
         }
     }
+    private void FixedUpdate()
+    {
+        if (Input.GetKey("escape"))
+            Application.Quit();
+    }
 }
